@@ -57,3 +57,7 @@ h3{
 .resume p{
     margin-top: 40px;
 }
+
+.no-disp{
+    display: none;
+}
