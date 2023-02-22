@@ -8,18 +8,37 @@
     <title>Biglietti</title>
 </head>
 <body>
-    <form action="/" method="get">
-        <input type="text" placeholder="Inserisci il tuo nome" id="nome-utente">
-        <input type="number" id="km-utente">
-        <select name="eta" id="eta-utente">
-            <option value="maggiorenne">Maggiorenne</option>
-            <option value="minorenne">Minorenne</option>
-            <option value="over65">Over-65</option>
-        </select>
-        <input type="button" value="Conferma" id="conferma">
-        <input type="reset" value="Annulla" id="reset-all">
-    </form>
-    <p id="demo">risultato</p>
+    <main>
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <div class="container tx-cen">
+            <form action="/" method="get">
+                <div class="cnt-top">
+                    <div>
+                        <h5>Nome e Cognome</h5>
+                        <input type="text" placeholder="Inserisci il tuo nome e cognome" id="nome-utente">
+                    </div>
+                    <div>
+                        <h5>Km da percorrere</h5>
+                        <input type="number" id="km-utente">                    
+                    </div>
+                    <div>
+                        <h5>Fascia d'eta</h5>
+                        <select name="eta" id="eta-utente">
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="minorenne">Minorenne</option>
+                            <option value="over65">Over-65</option>
+                        </select>                    
+                    </div>
+                </div>
+                <div class="cnt-bottom">
+                    <input type="button" value="Conferma" id="conferma">
+                    <input type="reset" value="Annulla" id="reset-all">
+                </div>
+            </form>
+        </div>
+        
+
+    <!-- <p id="demo">risultato</p> -->
     <script src="js/main.js"></script>
 </body>
 </html>

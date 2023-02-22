@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------------------ */
+/* COMMON */
+.tx-cen{
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-size: 2.50rem;
+    padding: 20px 0;
+    text-align: center;
+}
+/* ----------------------------------------- */
+main{
+    height: 100vh;
+    background-color: #b91547;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cnt-top{
+    display: flex;
+    justify-content: center;
+    gap: 6.25rem;
+    margin-bottom: 4.375rem;
+}
+
+h3{
+    font-size: 1.5625rem;
+}
+
+.resume{
+    display: flex;
+}
