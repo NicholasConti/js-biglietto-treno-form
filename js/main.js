@@ -10,14 +10,15 @@ let prezzoTot = kmUtente * prezzoBase;
 
 // Event listener
 const confermaUtente = document.getElementById('conferma');
-if (etaUtente ===  'minorenne'){
-    prezzoTot = prezzoTot -(prezzoTot * 20 /100);
-} else if (etaUtente === 'over65'){
-    prezzoTot = prezzoTot -(prezzoTot * 40 /100);
-}
+
 
 confermaUtente.addEventListener('click',
     function() {
+        if (etaUtente ===  'minorenne'){
+            prezzoTot = prezzoTot -(prezzoTot * 20 /100);
+        } else if (etaUtente === 'over65'){
+            prezzoTot = prezzoTot -(prezzoTot * 40 /100);
+        }
         document.getElementById("demo").innerHTML = prezzoTot;
     }
 )
