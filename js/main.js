@@ -30,6 +30,7 @@ confermaUtente.addEventListener('click',
 
         document.getElementById("tot").innerHTML = prezzoTot.toFixed(2);
         document.getElementById("nome-resume").innerHTML = nomeUtente;
+        document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10 + 1);
         changeDisplay.classList.remove("no-disp");
     }
 )
