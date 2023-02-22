@@ -1,7 +1,7 @@
 "use strict";
 //Variabili utente
-let nomeUtente = document.getElementById('nome-utente').value;
-let kmUtente = Number(document.getElementById('km-utente').value);
+let nomeUtente;
+let kmUtente;
 let etaUtente;
 
 // Variabili prezzo
@@ -14,6 +14,8 @@ let changeDisplay = document.getElementById('disp-no');
 confermaUtente.addEventListener('click',
     function() {
         etaUtente = (document.getElementById('eta-utente').value);
+        nomeUtente = document.getElementById('nome-utente').value;
+        kmUtente = Number(document.getElementById('km-utente').value);
         prezzoTot = kmUtente * prezzoBase;
 
         if (etaUtente === 'minorenne'){
@@ -23,6 +25,7 @@ confermaUtente.addEventListener('click',
         }
 
         document.getElementById("tot").innerHTML = prezzoTot.toFixed(2);
+        document.getElementById("nome-resume").innerHTML = nomeUtente;
         changeDisplay.classList.remove("no-disp");
     }
 )
