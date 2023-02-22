@@ -11,6 +11,7 @@ let prezzoTot = kmUtente * prezzoBase;
 // Event listener
 const confermaUtente = document.getElementById('conferma');
 let changeDisplay = document.getElementById('disp-no');
+
 confermaUtente.addEventListener('click',
     function() {
         etaUtente = (document.getElementById('eta-utente').value);
@@ -33,5 +34,14 @@ confermaUtente.addEventListener('click',
         document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10 + 1);
         document.getElementById("cod-cp").innerHTML = Math.floor(Math.random() * 100000);
         changeDisplay.classList.remove("no-disp");
+    }
+)
+
+//RESET
+const resetUtente = document.getElementById('reset-all');
+
+resetUtente.addEventListener('click',
+    function() {
+        changeDisplay.classList.add("no-disp");
     }
 )
