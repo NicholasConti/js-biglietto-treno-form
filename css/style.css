@@ -36,10 +36,35 @@ main{
     margin-bottom: 4.375rem;
 }
 
+.cnt-top h5{
+    color: #b91547;
+    font-size: 1.25rem;
+    margin-bottom: .9375rem;
+}
+
 h3{
     font-size: 1.5625rem;
 }
 
+.cnt-top input , select{
+    text-align: center;
+    width: 250px;
+    padding: 5px 0px;
+    border: 1px solid #b91547;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.cnt-bottom input{
+    background-color: #c5c5c5;
+    border: 1px solid #b91547;
+    border-radius: 5px;
+    padding: 5px;
+    color: #b91547;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
 .resume{
     display: flex;
     justify-content: space-between;
@@ -60,4 +85,37 @@ h3{
 
 .no-disp{
     display: none;
+}
+
+h4{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#nome-resume{
+    font-weight: bolder;
+    font-size: 1.35rem;
+
+}
+
+.resume h5 , .resume p{
+    font-size: 1.25rem;
+}
+/* ------------------------------------------------ */
+/* EFFETTI */
+
+.cnt-top input:focus{
+    color: white;
+    background-color: #b91547;
+}
+
+.cnt-bottom input:hover{
+    color: white;
+    background-color: grey;
+    border-color: grey;
+}
+
+.cnt-top select:focus-within{
+    color: white;
+    background-color: #b91547;
 }
