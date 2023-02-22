@@ -42,4 +42,18 @@ h3{
 
 .resume{
     display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.resume div{
+    padding: 30px;
+}
+.name-resume{
+    background-color: #757575;
+}
+
+.resume p{
+    margin-top: 40px;
 }
