@@ -20,8 +20,12 @@ confermaUtente.addEventListener('click',
 
         if (etaUtente === 'minorenne'){
             prezzoTot = prezzoTot -(prezzoTot * 20 /100);
+            document.getElementById("tipo-offerta").innerHTML = 'Biglietto Junior';
         } else if (etaUtente === 'over65'){
             prezzoTot = prezzoTot -(prezzoTot * 40 /100);
+            document.getElementById("tipo-offerta").innerHTML = 'Biglietto Silver';
+        } else{
+            document.getElementById("tipo-offerta").innerHTML = 'Biglietto Standard';
         }
 
         document.getElementById("tot").innerHTML = prezzoTot.toFixed(2);
